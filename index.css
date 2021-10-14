@@ -1,15 +1,80 @@
 html {
-    background-color: red;
     overflow: hidden;
     width: 100%;
-  }
-  
-  body {
+}
+
+body {
     height: 100%;
     position: fixed;
     /* prevent overscroll bounce*/
-    background-color: lightgreen;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     /* iOS velocity scrolling */
-  }
+}
+
+
+
+ /* The new nav scrollspy nav bar CSS  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+#the_main_content section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    font-weight: bold;
+}
+
+
+#the_main_content section:nth-child(even){
+    background-color: #ddd;
+}
+
+nav{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background: pink;
+    text-align: center;
+    z-index: 1;
+}
+
+nav a{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.6em;
+    display: inline-block;
+    transition: all 0.7s;
+}
+
+nav a:hover,
+#the_main_content section#one:hover ~ nav a[href="#one"],
+#the_main_content section#two:hover ~ nav a[href="#two"],
+#the_main_content section#three:hover ~ nav a[href="#three"],
+#the_main_content section#four:hover ~ nav a[href="#four"],
+#the_main_content section#five:hover ~ nav a[href="#five"]
+{
+    background: tomato;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
