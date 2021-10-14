@@ -10,18 +10,19 @@ body {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     /* iOS velocity scrolling */
+    background: red;
 }
 
 
 
  /* The new nav scrollspy nav bar CSS  */
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
+} */
 
 
 
