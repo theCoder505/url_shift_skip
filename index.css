@@ -10,7 +10,7 @@ body {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     /* iOS velocity scrolling */
-    background: red;
+    background: whitesmoke;
 }
 
 
