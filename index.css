@@ -6,8 +6,6 @@ html {
 body {
     height: 100%;
     position: fixed;
-    margin: 0;
-    padding: 0;
     /* prevent overscroll bounce*/
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -48,6 +46,7 @@ nav{
     text-align: center;
     z-index: 1;
     display: flex;
+    overflow: scroll;
 }
 
 nav a{
